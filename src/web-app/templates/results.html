@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Neural Nocturne</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </nav>
+        <div class="outer-container">
+            <div class="window-container">
+                <h1>Prediction Results</h1>
+                <p>Audio File: {{song_title}}</p>
+                <p>{% for key,value in form_data.items() %}</p>
+                <p> {{key}} : {{value}}%</p>
+                <p>{% endfor %}</p>
+            </div>
+        </div>
+    </body>
+</html> 
