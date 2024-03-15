@@ -1,7 +1,4 @@
 Flask
-google-cloud-aiplatform
-google-cloud-storage
-gunicorn
 joblib
 keras==2.15.0
 Keras-Preprocessing==1.1.2
