@@ -1,0 +1,260 @@
+body {
+  background-color: rgb(79,0,175);
+  animation-name: changeColor;
+  animation-duration: 3s;
+}
+
+.outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: text-shadow, background-color, color 1s 0s;
+  padding: 16px 32px;
+  background-color: rgb(79,0,175);
+  border-radius: 20px;
+  animation: changeColor;
+  animation-duration: 3s;
+  border: solid;
+  border-color: black;
+  border-top-width: 2px;
+  border-right-width: 6px;
+  border-bottom-width: 6px;
+  border-left-width: 2px;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-shadow: none;
+}
+
+h1 {
+  color: black;
+  font-size: 72px;
+  text-align: center;
+}
+
+p {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+}
+
+input {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 20px 20px 0px;
+}
+
+nav li {
+  padding: 20px 20px;
+  margin-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  list-style-type: none;
+}
+
+#audio-file-input {
+  display: none;
+}
+
+#submit-button {
+  padding: 12px;
+  margin-top: 0px;
+  transition: margin-top 1s 0s;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  padding: 16px 32px;
+  background-color: rgb(79,0,175);
+  border-radius: 20px;
+  border: solid;
+  border-top-width: 2px;
+  border-right-width: 6px;
+  border-bottom-width: 6px;
+  border-left-width: 2px;
+  border-color: black;
+}
+
+#submit-button:hover {
+  margin-top: -5px;
+}
+
+#audio-file-input-label {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  padding: 16px 32px;
+  background-color: rgb(79,0,175);
+  border-radius: 20px;
+  border: solid;
+  border-top-width: 2px;
+  border-right-width: 6px;
+  border-bottom-width: 6px;
+  border-left-width: 2px;
+  border-color: black;
+  margin-top: 0px;
+  transition: margin-top 1s 0s;
+}
+
+#audio-file-input-label:hover {
+  margin-top: -5px;
+}
+
+#url-field-label {
+  padding: 20px;
+}
+
+.label-wrapper {
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.youtube-input {
+  padding: 16px;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: black;
+}
+
+.url-field-wrapper {
+  padding: 5px;
+}
+
+.exo-2-900 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.header-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-container {
+  height: 50%;
+  width: 50%;
+  border-radius: 20px;
+  border: solid;
+  border-top-width: 4px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 4px;
+  border-color: black;
+  margin: 40px;
+  padding: 10px;
+  background-color: white;
+  animation-duration: 3s;
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: rgb(79,0,175);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (width: 360px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    margin: 10px;
+  }
+}
