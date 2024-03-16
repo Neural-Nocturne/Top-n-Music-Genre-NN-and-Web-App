@@ -1,0 +1,16 @@
+Flask
+joblib
+keras==2.15.0
+Keras-Preprocessing==1.1.2
+keyring
+lazy_loader
+librosa
+numpy
+pandas>=1.2.0
+pydub
+pytube
+requests
+scikit-learn
+soundfile
+tensorflow==2.15.1
+validators

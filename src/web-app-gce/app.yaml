@@ -1,0 +1,12 @@
+runtime: python39  # Adjust based on your application's runtime
+instance_class: B2
+
+basic_scaling:
+  max_instances: 11  # Maximum number of instances
+  idle_timeout: 5m  # Instances are shut down after being idle for this duration
+
+entrypoint: gunicorn -b :$PORT front_end:app
+
+handlers:
+- url: /.*
+  script: auto

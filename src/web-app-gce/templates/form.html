@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Neural Nocturne</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+    </nav>
+    <div class="outer-container">
+        <div class="window-container">         
+            <div class="header-div">
+                <h1 id="header" class="exo-2-900">Neural Nocturne</h1>
+            </div>
+            <div class="form-div">
+                <form action="/results" method = "POST" enctype=multipart/form-data>
+                    <p class="label-wrapper" ><label id="audio-file-input-label" class="exo-2-900" for="audio-file-input">Upload File</label></p>
+                    <input type ="file" id="audio-file-input" name ="Audio File" /> 
+                    <!-- <p class="submit-wrapper"><input class="exo-2-900" id="submit-button" type ="submit" value ="Upload" /></p> -->
+                    <p class="exo-2-900" id="url-field-wrapper"><label id="url-field-label">Youtube URL</label><input class="youtube-input" type ="url" name ="Youtube Link" /></p>
+                    <p class="submit-wrapper"><input class="exo-2-900" id="submit-button" type ="submit" value ="Submit" /></p>
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
+    
+ 
+

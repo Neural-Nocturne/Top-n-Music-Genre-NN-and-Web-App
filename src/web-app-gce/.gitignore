@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+._*
+
+Icon?
+Thumbs.db
+
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# RECYCLE.BIN/
+
+Desktop.ini
+ntuser.dat
+ntuser.ini
+
+*.db
+
+
+# Development Tools
+.vscode/
+.idea/
+
+# Environment
+.python-version
+
+# Virtual Environment
+env/
+
+# Machine Learning
+*.keras
