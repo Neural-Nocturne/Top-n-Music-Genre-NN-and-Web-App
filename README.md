@@ -3,20 +3,9 @@
 ```
 Description: i.e. what this app is, the problem it solves, etc.
 ```
-
----
-## Web App URL
-
-[https://top-n-music-genre-nn-2.uw.r.appspot.com/](https://top-n-music-genre-nn-2.uw.r.appspot.com/)
-
----
-## Table of Contents
-
-
 ---
 ## Getting Started
-
-
+This application is an Multi Layered Perceptron (MLP) which can classify music audio files into 10 different musical genres with 93% accuracy. This application can also extract music from Youtube video links and also run that through its model for classification. front_end.py is where the main program is run from. Enjoy!
 ---
 ## Authors
 
