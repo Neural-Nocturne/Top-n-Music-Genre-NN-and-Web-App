@@ -8,7 +8,7 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 # Construct the upload folder path relative to the current directory
 upload_folder_path = os.path.join(current_directory, 'upload_folder')
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 app.config['UPLOAD_FOLDER'] = upload_folder_path
 
 
@@ -25,7 +25,7 @@ def data():
             file = request.files['Audio File']
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            results_dict, unedited_title = controller(file, 1)
+            results_dict, unedited_title = controller(file, 1, filename)
         else:
             results_dict, unedited_title = controller(form_data, 2)
         if results_dict is None and unedited_title is None:
@@ -44,4 +44,4 @@ def about():
 
 
 if __name__ == "__main__":
-    app.run(host='localhost', port=5005)
+    app.run(debug=True, host='localhost', port=5005)

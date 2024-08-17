@@ -1,3 +1,4 @@
+certifi
 Flask
 joblib
 keras==2.15.0
@@ -8,7 +9,7 @@ librosa
 numpy
 pandas>=1.2.0
 pydub
-pytube
+pytubefix
 requests
 scikit-learn
 soundfile

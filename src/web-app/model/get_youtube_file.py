@@ -1,8 +1,9 @@
-from pytube import YouTube
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
 
 
 def get_youtube_audio_file(file_url):
-    yt = YouTube(file_url)
+    yt = YouTube(file_url, on_progress_callback = on_progress)
     title = yt.title
     unedited_title = yt.title
     title = title.replace(" ", "")

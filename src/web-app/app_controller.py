@@ -4,7 +4,7 @@ import model.format_results
 import model.predict
 
 
-def controller(form_data, options):
+def controller(form_data, options, filename=None):
     """Controller controls flow of application, will check input and format
     it, will also crop the files if they are over 30 seconds. Lastly it will
     load the model and run the file through model prediction and format
@@ -19,11 +19,12 @@ def controller(form_data, options):
     if formated_file is None and title is None and unedited_title is None:
         return None, None
     results = []
-    sample1 = model.crop_files.crop_file_to_30_sec(formated_file, title)
+    sample1 = model.crop_files.crop_file_to_30_sec(formated_file, title, filename)
     if options == 1:
-        results = model.predict.predict_music_genre('upload_folder/' + sample1.filename) # noqa
+        results = model.predict.predict_music_genre('upload_folder/' + sample1) # noqa
     else:
         results = model.predict.predict_music_genre(sample1)
+        print(f"Here are the results: {results}")
     results_dict = model.format_results.format_results(results[0])
     return results_dict, unedited_title
 
