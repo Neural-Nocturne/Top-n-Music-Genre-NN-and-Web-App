@@ -22,7 +22,7 @@
             <div class="form-div">
                 <form action="/results" method = "POST" enctype=multipart/form-data>
                     <p class="label-wrapper" ><label id="audio-file-input-label" class="exo-2-900" for="audio-file-input">Upload File</label></p>
-                    <input type ="file" id="audio-file-input" name ="Audio File" /> 
+                    <p>.wav files only</p><input type ="file" id="audio-file-input" name ="Audio File" accept=".wav"/> 
                     <!-- <p class="submit-wrapper"><input class="exo-2-900" id="submit-button" type ="submit" value ="Upload" /></p> -->
                     <p class="exo-2-900" id="url-field-wrapper"><label id="url-field-label">Youtube URL</label><input class="youtube-input" type ="url" name ="Youtube Link" /></p>
                     <p class="submit-wrapper"><input class="exo-2-900" id="submit-button" type ="submit" value ="Submit" /></p>
