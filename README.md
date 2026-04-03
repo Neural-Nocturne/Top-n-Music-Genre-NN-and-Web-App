@@ -23,8 +23,6 @@ This uses the package certifi to download the Mozilla's carefully curated certif
 
 - Elvin Carmona
 - Mark Jordan
-    - GitHub: [@markyjordan](https://github.com/markyjordan)
-    - LinkedIn: [in/markyjordan/](https://www.linkedin.com/in/markyjordan/)
 - Michael Levins
     - GitHub: [@mclevins](https://github.com/mclevins)
     - LinkedIn: [in/michaelclevins](https://www.linkedin.com/in/michaelclevins/)
